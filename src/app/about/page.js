@@ -3,59 +3,61 @@ import { ArrowRight, LogIn } from "lucide-react";
 import Link from "next/link";
 
 const About = () => {
-  const foundersInterns = [
-    // { name: 'Aryan Saini', linkedin: 'https://www.linkedin.com/in/aryan-saini-4b7797288/', photo: '/interns/aryan.jpeg' },
-    { name: 'Prince Yadav', linkedin: 'https://www.linkedin.com/in/prince-yadav-1403py/', photo: '/interns/prince.jpeg' },
+  const foundersOffice = [
     { name: 'Rajat', linkedin: 'https://www.linkedin.com/in/rajat-b92183207/', photo: '/interns/rajat.jpeg' },
-    { name: 'Rishika Rathore', linkedin: 'https://www.linkedin.com/in/rishika-kumari-4bab2522a/', photo: '/interns/rishika.jpeg' },
-    { name: 'Tanishq Soni', linkedin: 'https://www.linkedin.com/in/tanishq-soni-946a66293/', photo: '/interns/tanishq.jpeg' }
+    { name: 'Mayank Raj', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Roushan Raj', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Tanishq Soni', linkedin: 'https://www.linkedin.com/in/tanishq-soni-946a66293/', photo: '/interns/tanishq.jpeg' },
+    { name: 'Murukesh M', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Antima Agarwal', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Prakriti Yadav', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Rishika Kumari', linkedin: 'https://www.linkedin.com/in/rishika-kumari-4bab2522a/', photo: '/interns/rishika.jpeg' },
+    { name: 'Amey Dikshit', linkedin: 'https://www.linkedin.com/in/', photo: '' },
   ];
 
-  const devInterns = [
-    { name: 'Ahmed Adnan', linkedin: 'https://www.linkedin.com/in/ahmed-adnan-00943a197/', photo: '/interns/ahmed.jpeg' },
-    { name: 'Ankit Kumar Dubey', linkedin: 'https://www.linkedin.com/in/ankit-kumar-dubey-830847293/', photo: '/interns/ankit.jpeg' },
-    { name: 'Anku Kr Singh', linkedin: null, photo: '/interns/anku.jpeg' },
-    { name: 'Archisman Dhar', linkedin: 'https://www.linkedin.com/in/archisman-dhar/', photo: '/interns/archisman.jpeg' },
-    { name: 'Harsh Gupta', linkedin: 'https://www.linkedin.com/in/varun-malviya-6ab47a18a/', photo: '/interns/harsh.jpeg' },
-    { name: 'Kushal Agarwal', linkedin: 'https://www.linkedin.com/in/kushal-agrawal-1b2722298/', photo: '/interns/kushal.jpeg' },
-    { name: 'Meghana Kadari', linkedin: 'https://www.linkedin.com/in/meghana-kadari-3556b9320/', photo: '/interns/meghana.jpeg' },
+  const teamMembers = [
+    { name: 'Aaruj Singh Sisodiya', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Rahul Kumar', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Humayun Ahmad', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Atanu Biswas', linkedin: 'https://www.linkedin.com/in/', photo: '' },
     { name: 'Pratyush Biswal', linkedin: 'https://www.linkedin.com/in/pratyush-biswal-289444163/', photo: '/interns/pratyush.jpeg' },
-    { name: 'Sanvi Jain', linkedin: 'https://www.linkedin.com/in/sanvi-jain-0a9a2b280/', photo: '/interns/sanvi.jpeg' },
+    { name: 'Kanishk Dhariwal', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Mohd Fahad', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Mitin Jangid', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Harshit Agarwal', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Mayank Agrawal', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Meghana Kadari', linkedin: 'https://www.linkedin.com/in/meghana-kadari-3556b9320/', photo: '/interns/meghana.jpeg' },
+    { name: 'Waqar Moid', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Suryans Kumar Verma', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Harsha Sharma', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Snehasish Haldar', linkedin: 'https://www.linkedin.com/in/', photo: '' },
     { name: 'Shourya Mathur', linkedin: 'https://www.linkedin.com/in/shourya-mathur-56918221a/', photo: '/interns/shourya.jpeg' },
-    { name: 'Shreyansh Devangan', linkedin: 'https://www.linkedin.com/in/shreyansh-dewangan-85a4bb283/', photo: '/interns/shreyansh.jpeg' },
-    { name: 'Tanmay Prasad', linkedin: 'https://www.linkedin.com/in/tanmayprasad02/', photo: '/interns/tanmay.jpeg' },
-    { name: 'Vaibhar Meena', linkedin: 'https://www.linkedin.com/in/vaibhav-meena-b93832311/', photo: '/interns/vaibhav.jpeg' },
-    { name: 'Varun Malviya', linkedin: 'https://www.linkedin.com/in/varun-malviya-6ab47a18a/', photo: '/interns/varun.jpeg' },
-    { name: 'Vibhor Srivastava', linkedin: 'https://www.linkedin.com/in/vibhor-srivastava-496b4327b/', photo: '/interns/vibhor.jpeg' },
-    { name: 'Vivek', linkedin: 'https://www.linkedin.com/in/vivek-80ba11279/', photo: '/interns/vivek.jpeg' },
-    { name: 'Yash Pathak', linkedin: 'https://www.linkedin.com/in/yash-pathak-24802128b/', photo: '/interns/yash.jpeg' }
+    { name: 'Prince Yadav', linkedin: 'https://www.linkedin.com/in/prince-yadav-1403py/', photo: '/interns/prince.jpeg' },
+    { name: 'Adarsh', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Nirjala Kushwaha', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Ayush Dubey', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Nikhil N', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Sarvesh Bharambe', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Vaibhav Meena', linkedin: 'https://www.linkedin.com/in/vaibhav-meena-b93832311/', photo: '/interns/vaibhav.jpeg' },
+    { name: 'Rohan Kumar', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Ayush', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Divyansh Gupta', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Sunny Kumar', linkedin: 'https://www.linkedin.com/in/', photo: '' },
+    { name: 'Archisman Dhar', linkedin: 'https://www.linkedin.com/in/archisman-dhar/', photo: '/interns/archisman.jpeg' },
   ];
 
-  const designInterns = [
-    { name: "Deepanshi Mishra", linkedin: "https://www.linkedin.com/in/deepanshi-mishra-179b502a8/", photo: '/interns/deepanshi.png' },
-    {
-      name: "Ojasva",
-      linkedin: "https://www.linkedin.com/in/ojasva-tripathi-377b91241/",
-      photo: "/interns/ojasva.jpeg",
-    },
-
-    {
-      name: "Shefali Maheshwari",
-      linkedin: 'https://www.linkedin.com/in/shefali-maheshwari-36044918b/',
-      photo: "/interns/shefali.jpeg",
-    },
-  ];
-
-  const renderInterns = (internList) => (
+  const renderMembers = (memberList) => (
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2.5rem', marginBottom: '5rem', width: '100%' }}>
-      {internList.map((intern, idx) => (
+      {memberList.map((member, idx) => (
         <div key={idx} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', width: '160px' }}>
           <div style={{ width: '120px', height: '120px', borderRadius: '30px', backgroundColor: 'var(--border-light)', marginBottom: '1.25rem', overflow: 'hidden', boxShadow: 'var(--shadow-sm)' }}>
-            <img src={intern.photo} alt={intern.name} style={{ width: '100%', height: '100%', objectFit: 'cover', display: intern.photo ? 'block' : 'none' }} />
+            {member.photo && (
+              <img src={member.photo} alt={member.name} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            )}
           </div>
-          <h4 style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--text-main)', marginBottom: '0.4rem', lineHeight: '1.2' }}>{intern.name}</h4>
-          {intern.linkedin && (
-            <a href={intern.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: '#0A66C2', display: 'flex', alignItems: 'center', justifyItems: 'center', opacity: '0.8', transition: 'opacity 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.opacity = '1'} onMouseLeave={(e) => e.currentTarget.style.opacity = '0.8'}>
+          <h4 style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--text-main)', marginBottom: '0.4rem', lineHeight: '1.2' }}>{member.name}</h4>
+          {member.linkedin && (
+            <a href={member.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: '#0A66C2', display: 'flex', alignItems: 'center', justifyItems: 'center', opacity: '0.8', transition: 'opacity 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.opacity = '1'} onMouseLeave={(e) => e.currentTarget.style.opacity = '0.8'}>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
             </a>
           )}
@@ -82,7 +84,7 @@ const About = () => {
                   fontSize: "3rem",
                 }}
               >
-                About the <span>company</span>
+                About <span>CarbonTatva AI</span>
               </h1>
               <img src="/CarbonTatvaAi_logo.png" alt="CarbonTatva AI" className="mobile-only-logo hide-on-desktop" />
             </div>
@@ -91,7 +93,7 @@ const About = () => {
               style={{ textAlign: "left", marginBottom: "1.5rem" }}
             >
               CarbonTatva AI is an AI-native platform that enables businesses to
-              measure, monitor, and forecast carbon emissions. Built for India’s
+              measure, monitor, and forecast carbon emissions. Built for India's
               regulatory landscape, it transforms operational data into
               actionable insights for compliance and decarbonisation.
             </p>
@@ -208,7 +210,7 @@ const About = () => {
           </div>
         </section>
 
-        {/* Interns Section */}
+        {/* Team Section */}
         <section
           className="interns-section"
           style={{ maxWidth: "1200px", margin: "0 auto", width: "100%" }}
@@ -222,7 +224,7 @@ const About = () => {
               margin: "0 auto 4rem",
             }}
           >
-            Our <span>interns</span>
+            Our <span>team</span>
           </h2>
 
           <h3
@@ -233,33 +235,11 @@ const About = () => {
               color: "var(--text-main)",
             }}
           >
-            Founder's Office Interns
+            Founder&apos;s Office
           </h3>
-          {renderInterns(foundersInterns)}
+          {renderMembers(foundersOffice)}
 
-          <h3
-            style={{
-              fontSize: "2rem",
-              textAlign: "center",
-              marginBottom: "3rem",
-              color: "var(--text-main)",
-            }}
-          >
-            Developer Interns
-          </h3>
-          {renderInterns(devInterns)}
-
-          <h3
-            style={{
-              fontSize: "2rem",
-              textAlign: "center",
-              marginBottom: "3rem",
-              color: "var(--text-main)",
-            }}
-          >
-            Design Interns
-          </h3>
-          {renderInterns(designInterns)}
+          {renderMembers(teamMembers)}
         </section>
       </div>
     </main>

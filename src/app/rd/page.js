@@ -150,39 +150,18 @@ const RD = () => {
 
           {/* Papers Section */}
           <section className="papers-grid">
-            {/* Paper 1 */}
+            {/* Paper 1 - Springer */}
             <div className="paper-card">
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap' }}>
+                <span style={{ background: 'var(--primary-green)', color: 'white', padding: '0.2rem 0.75rem', borderRadius: '20px', fontSize: '0.8rem', fontWeight: '600' }}>Journal</span>
+                <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>· Springer Nature · Oct 23, 2025</span>
+              </div>
               <h2 className="paper-title">
-                Climate Change: Impact of Global Warming on India’s Electricity
-                Consumption
+                Energy Transition Modeling: Short-Term Electricity Demand Forecasting Using Seq2Seq Encoder–Decoder Model
               </h2>
-              <div className="paper-authors">By Mantavya Upadhyay et al.</div>
-              <p className="paper-summary">
-                This study analyses how rising temperatures influence
-                electricity demand across India, using state-level consumption
-                and weather data. It highlights how temperature variations
-                significantly impact demand patterns, with big regional and
-                socio-economic differences. The findings provide a foundation
-                for understanding climate-driven demand shifts, directly
-                informing how we model emissions sensitivity and forecast future
-                energy needs.
+              <p style={{ color: 'var(--primary-green)', fontSize: '0.95rem', fontWeight: '600', marginBottom: '1rem' }}>
+                Book: <em>Materials, Devices and Systems for Sustainability, IITK Directions, Volume 8</em>
               </p>
-              <button
-                className="btn btn-primary"
-                onClick={() => alert("Paper link coming soon!")}
-              >
-                Read Paper{" "}
-                <ExternalLink size={18} style={{ marginLeft: "8px" }} />
-              </button>
-            </div>
-
-            {/* Paper 2 */}
-            <div className="paper-card">
-              <h2 className="paper-title">
-                Energy Transition Modelling: Short-Term Electricity Demand
-                Forecasting Using Seq2Seq Encoder–Decoder Model
-              </h2>
-              <div className="paper-authors">By Mantavya Upadhyay et al.</div>
               <p className="paper-summary">
                 This paper introduces a Seq2Seq LSTM-based approach for
                 short-term electricity demand forecasting that captures complex
@@ -192,6 +171,9 @@ const RD = () => {
                 informs our AI-native forecasting systems, enabling more
                 accurate emissions projections and better planning under dynamic
                 operational conditions.
+              </p>
+              <p style={{ color: 'var(--primary-green)', fontSize: '0.9rem', fontWeight: '600', marginBottom: '1.5rem' }}>
+                Supervisor: Prof. Rajeev Jindal, Department of Sustainable Energy Engineering, IIT Kanpur
               </p>
               <a
                 href="https://link.springer.com/chapter/10.1007/978-981-96-7295-0_10"
@@ -204,13 +186,16 @@ const RD = () => {
               </a>
             </div>
 
-            {/* Paper 3 */}
+            {/* Paper 2 - IEEE */}
             <div className="paper-card">
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap' }}>
+                <span style={{ background: 'var(--primary-green)', color: 'white', padding: '0.2rem 0.75rem', borderRadius: '20px', fontSize: '0.8rem', fontWeight: '600' }}>Conference</span>
+                <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>· IEEE · 2025</span>
+              </div>
               <h2 className="paper-title">
                 A Smartphone-Based Hybrid Model for Real-Time Monitoring of
                 Aggressive Driving Behavior
               </h2>
-              <div className="paper-authors">By Mantavya Upadhyay et al.</div>
               <p className="paper-summary">
                 This paper highlights the core technical competency of
                 CarbonTatva AI by demonstrating our ability to process complex,
@@ -235,6 +220,35 @@ const RD = () => {
                 Read Paper{" "}
                 <ExternalLink size={18} style={{ marginLeft: "8px" }} />
               </a>
+            </div>
+
+            {/* Paper 3 - Climate Change */}
+            <div className="paper-card">
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap' }}>
+                <span style={{ background: 'var(--primary-green)', color: 'white', padding: '0.2rem 0.75rem', borderRadius: '20px', fontSize: '0.8rem', fontWeight: '600' }}>Research</span>
+                <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>· Upcoming</span>
+              </div>
+              <h2 className="paper-title">
+                Climate Change: Impact of Global Warming on India&apos;s Electricity
+                Consumption
+              </h2>
+              <p className="paper-summary">
+                This study analyses how rising temperatures influence
+                electricity demand across India, using state-level consumption
+                and weather data. It highlights how temperature variations
+                significantly impact demand patterns, with big regional and
+                socio-economic differences. The findings provide a foundation
+                for understanding climate-driven demand shifts, directly
+                informing how we model emissions sensitivity and forecast future
+                energy needs.
+              </p>
+              <button
+                className="btn btn-primary"
+                onClick={() => alert("Paper link coming soon!")}
+              >
+                Read Paper{" "}
+                <ExternalLink size={18} style={{ marginLeft: "8px" }} />
+              </button>
             </div>
           </section>
 
