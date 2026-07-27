@@ -1641,3 +1641,24 @@ border-radius:20px;
     width:36px;
     height:36px;
 }
+
+/* ==========================================================================
+   BLOG & INSIGHTS SPECIALIZED STYLES
+   ========================================================================== */
+.hover-green:hover {
+  color: var(--primary-green) !important;
+}
+
+.blog-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 4rem;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .blog-detail-layout {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+}

@@ -27,7 +27,20 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Legal & Resources */}
+        {/* Regulations & Guides */}
+        <div>
+          <h4 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '1.5rem', color: 'var(--text-main)' }}>Regulations Hub</h4>
+          <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', padding: 0 }}>
+            <li><Link href="/blogs" className="footer-link">All Insights & Research</Link></li>
+            <li><Link href="/blogs/what-is-carbon-accounting" className="footer-link">Carbon Accounting Guide</Link></li>
+            <li><Link href="/blogs/what-is-cbam" className="footer-link">EU CBAM Compliance</Link></li>
+            <li><Link href="/blogs/what-is-brsr" className="footer-link">SEBI BRSR Core Reporting</Link></li>
+            <li><Link href="/blogs/what-is-ccts" className="footer-link">India CCTS Market</Link></li>
+            <li><Link href="/blogs/scope-3-emissions-management-guide" className="footer-link">Scope 3 Value Chain</Link></li>
+          </ul>
+        </div>
+
+        {/* Legal */}
         <div>
           <h4 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '1.5rem', color: 'var(--text-main)' }}>Legal</h4>
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', padding: 0 }}>
