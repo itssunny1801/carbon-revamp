@@ -158,7 +158,7 @@ const BlogDetailContent = ({ blog, relatedBlogs = [] }) => {
           <img
             src={blog.featuredImage}
             alt={blog.featuredImageAlt}
-            style={{ width: '100%', height: 'auto', maxHeight: '520px', objectFit: 'cover' }}
+            style={{ width: '100%', height: 'auto', maxHeight: '520px', objectFit: 'contain', padding: '1.5rem' }}
           />
         </div>
 
@@ -634,7 +634,7 @@ const BlogDetailContent = ({ blog, relatedBlogs = [] }) => {
                   }}
                   >
                     <div style={{ background: '#0F172A', height: '170px', width: '100%', overflow: 'hidden', position: 'relative' }}>
-                      <img src={rel.featuredImage} alt={rel.featuredImageAlt} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <img src={rel.featuredImage} alt={rel.featuredImageAlt} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '10px' }} />
                       <div style={{
                         position: 'absolute',
                         top: '12px',

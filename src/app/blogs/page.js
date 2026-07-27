@@ -213,11 +213,11 @@ const Blogs = () => {
                   e.currentTarget.style.borderColor = 'var(--border-light)';
                 }}
               >
-                <div style={{ background: '#0F172A', minHeight: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                <div style={{ background: '#0F172A', minHeight: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', padding: '1.5rem' }}>
                   <img
                     src={featuredBlog.featuredImage}
                     alt={featuredBlog.featuredImageAlt}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
+                    style={{ width: '100%', height: '100%', objectFit: 'contain', maxHeight: '340px', transition: 'transform 0.5s ease' }}
                     onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.03)'; }}
                     onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
                   />
@@ -328,7 +328,7 @@ const Blogs = () => {
                     <img
                       src={blog.featuredImage}
                       alt={blog.featuredImageAlt}
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '12px', transition: 'transform 0.5s ease' }}
                     />
                     <div style={{
                       position: 'absolute',

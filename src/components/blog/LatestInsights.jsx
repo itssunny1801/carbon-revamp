@@ -63,7 +63,7 @@ const LatestInsights = () => {
               }}
               >
                 <div style={{ background: "#0F172A", height: "200px", width: "100%", overflow: "hidden", position: "relative" }}>
-                  <img src={blog.featuredImage} alt={blog.featuredImageAlt} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  <img src={blog.featuredImage} alt={blog.featuredImageAlt} style={{ width: "100%", height: "100%", objectFit: "contain", padding: "10px" }} />
                   <div style={{
                     position: "absolute",
                     top: "14px",
