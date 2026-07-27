@@ -1,6 +1,14 @@
 // import React from 'react';
 import { ArrowRight,ArrowDown, Database, BarChart2, TrendingUp, FileSearch, Eye, Settings, Scale, ShieldCheck, CircleDollarSign, Clock, Target, LogIn } from 'lucide-react';
 import Link from "next/link";
+import LatestInsights from "@/components/blog/LatestInsights";
+
+// This component also renders the canonical homepage at "/".
+// Point the duplicate /Home route back to "/" and keep it out of the index.
+export const metadata = {
+  alternates: { canonical: "/" },
+  robots: { index: false, follow: true },
+};
 
 const Home = () => {
   return (
@@ -345,6 +353,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <LatestInsights />
     </main>
   );
 };

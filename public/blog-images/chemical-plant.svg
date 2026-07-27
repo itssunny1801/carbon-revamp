@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1120" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00A86B" stop-opacity="0.4" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+  <rect width="800" height="450" fill="url(#grid)" />
+
+  <!-- Ambient Glow Circles -->
+  <circle cx="650" cy="100" r="180" fill="#A855F7" fill-opacity="0.08" filter="blur(40px)" />
+  <circle cx="150" cy="350" r="200" fill="#3B82F6" fill-opacity="0.06" filter="blur(50px)" />
+
+  <!-- Abstract Geometric Background Shapes -->
+  <path d="M-100 450 L300 250 L500 450 Z" fill="url(#glowGrad)" />
+  <path d="M400 0 L800 200 L800 0 Z" fill="#3B82F6" fill-opacity="0.05" />
+
+  <!-- Glassmorphism Card in Center-Right -->
+  <rect x="420" y="80" width="320" height="290" rx="20" fill="#1E293B" fill-opacity="0.4" stroke="#A855F7" stroke-opacity="0.3" stroke-width="1.5" />
+  <circle cx="460" cy="120" r="6" fill="#EF4444" fill-opacity="0.7" />
+  <circle cx="480" cy="120" r="6" fill="#F59E0B" fill-opacity="0.7" />
+  <circle cx="500" cy="120" r="6" fill="#10B981" fill-opacity="0.7" />
+  <line x1="440" y1="140" x2="720" y2="140" stroke="#334155" stroke-width="1" />
+
+  <!-- Thematic Icon / Graphic inside Card -->
+  <g transform="translate(480, 170)" filter="url(#glow)">
+    <path d="M100 30 L145 55 L145 105 L100 130 L55 105 L55 55 Z" stroke="#A855F7" stroke-width="5" fill="#A855F7" fill-opacity="0.15"/>
+           <circle cx="100" cy="30" r="8" fill="#00E599"/>
+           <circle cx="145" cy="105" r="8" fill="#3B82F6"/>
+           <circle cx="55" cy="105" r="8" fill="#EF4444"/>
+           <line x1="100" y1="80" x2="100" y2="130" stroke="#A855F7" stroke-width="3" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Left Side Typography &amp; Brand -->
+  <g transform="translate(60, 140)">
+    <rect x="0" y="0" width="120" height="28" rx="14" fill="#A855F7" fill-opacity="0.15" stroke="#A855F7" stroke-width="1" stroke-opacity="0.4" />
+    <text x="60" y="18" fill="#A855F7" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1">CARBONTATVA AI</text>
+    
+    <text x="0" y="70" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="800" letter-spacing="-0.5">Chemical Compliance</text>
+    <text x="0" y="105" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="500">Ammonia &amp; Chlor-Alkali</text>
+    
+    <!-- Decorative Progress Bar -->
+    <rect x="0" y="140" width="280" height="6" rx="3" fill="#334155" />
+    <rect x="0" y="140" width="180" height="6" rx="3" fill="url(#accentGrad)" />
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <rect x="0" y="446" width="800" height="4" fill="url(#accentGrad)" />
+</svg>
